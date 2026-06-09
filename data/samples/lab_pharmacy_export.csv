@@ -1,0 +1,27 @@
+record_type,record_id,patient_id,patient_name,dob,gender,date,category,description,code,code_system,value,unit,reference_range,flag,provider,facility,notes
+DEMOGRAPHICS,D001,LAB-V68412,Virtanen Mikael,1968-04-12,Male,,PATIENT_INFO,Patient Registration,,,,,,,Dr. Mäkinen,Helsinki Central Lab,Referred by Clinic B
+LAB,L001,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2024-01-10,LABORATORY,Hemoglobin A1c,4548-4,LOINC,7.8,%,4.0-6.0,HIGH,Dr. Mäkinen,Helsinki Central Lab,Fasting sample confirmed
+LAB,L002,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2024-01-10,LABORATORY,LDL Cholesterol,2089-1,LOINC,2.4,mmol/L,<2.6,NORMAL,Dr. Mäkinen,Helsinki Central Lab,
+LAB,L003,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2024-01-10,LABORATORY,HDL Cholesterol,2085-9,LOINC,1.1,mmol/L,>1.0,NORMAL,Dr. Mäkinen,Helsinki Central Lab,
+LAB,L004,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2024-01-10,LABORATORY,Triglycerides,2571-8,LOINC,1.8,mmol/L,<1.7,BORDERLINE,Dr. Mäkinen,Helsinki Central Lab,
+LAB,L005,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2024-01-10,LABORATORY,eGFR (CKD-EPI),33914-3,LOINC,74,mL/min/1.73m2,>60,NORMAL,Dr. Mäkinen,Helsinki Central Lab,Mild reduction - monitor annually
+LAB,L006,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2024-01-10,LABORATORY,Serum Creatinine,2160-0,LOINC,98,umol/L,62-106,NORMAL,Dr. Mäkinen,Helsinki Central Lab,
+LAB,L007,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2024-01-10,LABORATORY,ALT,1742-6,LOINC,32,U/L,7-56,NORMAL,Dr. Mäkinen,Helsinki Central Lab,Statin monitoring
+LAB,L008,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2023-07-15,LABORATORY,Hemoglobin A1c,4548-4,LOINC,8.2,%,4.0-6.0,HIGH,Dr. Mäkinen,Helsinki Central Lab,Patient admitted to skipping Metformin doses
+LAB,L009,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2022-12-05,LABORATORY,Hemoglobin A1c,4548-4,LOINC,7.5,%,4.0-6.0,HIGH,Dr. Mäkinen,Helsinki Central Lab,
+LAB,L010,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2022-12-05,LABORATORY,LDL Cholesterol,2089-1,LOINC,2.9,mmol/L,<2.6,HIGH,Dr. Mäkinen,Helsinki Central Lab,Statin dose reviewed
+MEDICATION,M001,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2018-06-15,PRESCRIPTION,Lisinopril 10mg tablets,29046,RXNORM,10,mg,,,Dr. Korhonen,Clinic B,Once daily - antihypertensive
+MEDICATION,M002,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2020-02-20,PRESCRIPTION,Metformin 500mg tablets,860975,RXNORM,500,mg,,,Dr. Korhonen,Clinic B,Twice daily with meals - antidiabetic
+MEDICATION,M003,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2020-03-05,PRESCRIPTION,Atorvastatin 20mg tablets,617312,RXNORM,20,mg,,,Dr. Korhonen,Clinic B,Once nightly - lipid lowering
+MEDICATION,M004,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2024-02-10,PRESCRIPTION,Aspirin 100mg tablets,1191,RXNORM,100,mg,,,Dr. Mäkinen,Helsinki Central Lab,Once daily - cardiovascular prophylaxis
+IMAGING,I001,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2023-09-05,IMAGING,Transthoracic Echocardiogram,40701008,SNOMED,,,,COMPLETED,Dr. Järvinen,Hospital A,Mild LVH. EF 55%. No significant valvular disease.
+IMAGING,I002,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2021-03-22,IMAGING,Chest X-Ray,399208008,SNOMED,,,,COMPLETED,Dr. Järvinen,Hospital A,Mild cardiomegaly. No acute infiltrates.
+ENCOUNTER,E001,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2024-10-01,VISIT,Outpatient follow-up - Endocrinology,,,,,,Dr. Korhonen,Clinic B,Quarterly diabetes review. Weight management discussed.
+ENCOUNTER,E002,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2023-09-05,VISIT,Cardiology Consultation,,,,,,Dr. Järvinen,Hospital A,Chest pain evaluation. Echo ordered. Low-risk profile.
+ENCOUNTER,E003,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2023-07-15,VISIT,Outpatient follow-up - GP,,,,,,Dr. Korhonen,Clinic B,Annual review. All chronic conditions reviewed.
+ENCOUNTER,E004,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2020-02-20,VISIT,Outpatient - GP,,,,,,Dr. Korhonen,Clinic B,New diagnosis of Type 2 DM. Started Metformin.
+ALLERGY,A001,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2019-03-10,ALLERGY,Penicillin,372687004,SNOMED,,,,,Dr. Korhonen,Clinic B,Rash - moderate severity. Avoid all beta-lactams.
+CONDITION,C001,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2018-06-01,DIAGNOSIS,Hypertension,38341003,SNOMED,,,,ACTIVE,Dr. Korhonen,Clinic B,
+CONDITION,C002,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2020-02-10,DIAGNOSIS,Type 2 Diabetes Mellitus,44054006,SNOMED,,,,ACTIVE,Dr. Korhonen,Clinic B,
+CONDITION,C003,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2020-02-20,DIAGNOSIS,Dyslipidaemia,370992007,SNOMED,,,,ACTIVE,Dr. Korhonen,Clinic B,
+CONDITION,C004,LAB-V68412,Virtanen Mikael,1968-04-12,Male,2021-06-15,DIAGNOSIS,Obesity,414916001,SNOMED,,,,ACTIVE,Dr. Korhonen,Clinic B,BMI 31.2

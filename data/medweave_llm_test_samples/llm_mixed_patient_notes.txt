@@ -1,0 +1,17 @@
+BATCHED CLINICAL NOTES - copied from legacy system
+
+---
+PATIENT: Otto Nieminen | DOB 03-02-1962 | legacy id: OLD-OTTO-22
+
+Problem list says "DM2 since 2016" and "HTN since 2016".
+Older endocrinology note says diabetes onset was 07/11/2016; GP problem list
+only says 2016. Patient takes Metformin HCl 500 mg twice daily, started Nov 2016.
+Review on 10 June 2024: HbA1c 8.4% HIGH. eGFR 64, stable.
+Plan: increase diabetes education, no med change today.
+
+---
+PATIENT: Leena Saarinen | DOB 11.12.1988 | legacy id: OLD-LEE-88
+
+Longstanding migraines. First neurology note Sept 2021.
+Peanut allergy documented 02/04/2020 with anaphylaxis risk.
+Seen 02/05/2024 for migraine follow-up. BP 118/76. No diabetes, no hypertension.

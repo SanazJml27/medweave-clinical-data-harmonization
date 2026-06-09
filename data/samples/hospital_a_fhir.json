@@ -1,0 +1,246 @@
+{
+  "resourceType": "Bundle",
+  "id": "patient-bundle-hospital-a",
+  "type": "collection",
+  "meta": {
+    "source": "Hospital A - Epic EHR",
+    "lastUpdated": "2024-11-20T10:00:00Z"
+  },
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-001",
+        "identifier": [
+          {
+            "system": "http://hospital-a.org/patients",
+            "value": "HA-78432"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Virtanen",
+            "given": ["Mikael", "Johan"]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1968-04-12",
+        "address": [
+          {
+            "line": ["Mannerheimintie 42"],
+            "city": "Helsinki",
+            "country": "FI"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-001",
+        "clinicalStatus": {
+          "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active" }]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "I10",
+              "display": "Essential (primary) hypertension"
+            }
+          ],
+          "text": "Essential (primary) hypertension"
+        },
+        "subject": { "reference": "Patient/patient-001" },
+        "onsetDateTime": "2018-06-01",
+        "recordedDate": "2018-06-15"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-002",
+        "clinicalStatus": {
+          "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active" }]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "E11.9",
+              "display": "Type 2 diabetes mellitus without complications"
+            }
+          ],
+          "text": "Type 2 diabetes mellitus without complications"
+        },
+        "subject": { "reference": "Patient/patient-001" },
+        "onsetDateTime": "2020-02-10",
+        "recordedDate": "2020-02-20"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-003",
+        "clinicalStatus": {
+          "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active" }]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "E78.5",
+              "display": "Hyperlipidemia, unspecified"
+            }
+          ],
+          "text": "Hyperlipidemia, unspecified"
+        },
+        "subject": { "reference": "Patient/patient-001" },
+        "onsetDateTime": "2020-02-20",
+        "recordedDate": "2020-03-01"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "med-001",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "29046",
+              "display": "Lisinopril"
+            }
+          ],
+          "text": "Lisinopril 10mg"
+        },
+        "subject": { "reference": "Patient/patient-001" },
+        "authoredOn": "2018-06-15",
+        "dosageInstruction": [
+          {
+            "text": "10mg once daily",
+            "timing": { "repeat": { "frequency": 1, "period": 1, "periodUnit": "d" } },
+            "doseAndRate": [
+              {
+                "doseQuantity": { "value": 10, "unit": "mg", "system": "http://unitsofmeasure.org", "code": "mg" }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "med-002",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "860975",
+              "display": "Metformin"
+            }
+          ],
+          "text": "Metformin 500mg"
+        },
+        "subject": { "reference": "Patient/patient-001" },
+        "authoredOn": "2020-02-20",
+        "dosageInstruction": [
+          {
+            "text": "500mg twice daily with meals",
+            "timing": { "repeat": { "frequency": 2, "period": 1, "periodUnit": "d" } },
+            "doseAndRate": [
+              {
+                "doseQuantity": { "value": 500, "unit": "mg", "system": "http://unitsofmeasure.org", "code": "mg" }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-001",
+        "status": "final",
+        "category": [
+          {
+            "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "laboratory" }]
+          }
+        ],
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "4548-4", "display": "Hemoglobin A1c/Hemoglobin.total in Blood" }
+          ],
+          "text": "HbA1c"
+        },
+        "subject": { "reference": "Patient/patient-001" },
+        "effectiveDateTime": "2024-01-10",
+        "valueQuantity": { "value": 7.8, "unit": "%", "system": "http://unitsofmeasure.org", "code": "%" }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-002",
+        "status": "final",
+        "category": [
+          {
+            "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs" }]
+          }
+        ],
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "55284-4", "display": "Blood pressure systolic and diastolic" }
+          ],
+          "text": "Blood Pressure"
+        },
+        "subject": { "reference": "Patient/patient-001" },
+        "effectiveDateTime": "2024-01-10",
+        "component": [
+          {
+            "code": { "coding": [{ "system": "http://loinc.org", "code": "8480-6", "display": "Systolic blood pressure" }] },
+            "valueQuantity": { "value": 148, "unit": "mmHg" }
+          },
+          {
+            "code": { "coding": [{ "system": "http://loinc.org", "code": "8462-4", "display": "Diastolic blood pressure" }] },
+            "valueQuantity": { "value": 92, "unit": "mmHg" }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "enc-001",
+        "status": "finished",
+        "class": { "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode", "code": "IMP", "display": "inpatient encounter" },
+        "type": [{ "coding": [{ "display": "Cardiology consultation" }] }],
+        "subject": { "reference": "Patient/patient-001" },
+        "period": { "start": "2023-09-05T08:00:00Z", "end": "2023-09-05T10:30:00Z" },
+        "reasonCode": [{ "text": "Chest pain evaluation" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "proc-001",
+        "status": "completed",
+        "code": {
+          "coding": [
+            { "system": "http://snomed.info/sct", "code": "40701008", "display": "Echocardiography" }
+          ],
+          "text": "Transthoracic echocardiogram"
+        },
+        "subject": { "reference": "Patient/patient-001" },
+        "performedDateTime": "2023-09-05",
+        "note": [{ "text": "Mild left ventricular hypertrophy. EF 55%. No wall motion abnormalities." }]
+      }
+    }
+  ]
+}

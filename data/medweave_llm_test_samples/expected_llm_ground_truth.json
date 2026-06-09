@@ -1,0 +1,258 @@
+{
+  "notes": [
+    "This is an approximate expected output for evaluating LLM extraction.",
+    "Exact labels may vary, but patient separation, categories, dates, values, and provenance should be correct.",
+    "All data are synthetic."
+  ],
+  "expected_events": [
+    {
+      "patient_name": "Aava Laine",
+      "date": "2019-05-01",
+      "date_precision": "month",
+      "category": "diagnosis",
+      "label": "Asthma",
+      "standard_code": "195967001",
+      "standard_code_system": "SNOMED",
+      "evidence_files": [
+        "llm_free_text_discharge_aava.txt",
+        "llm_weird_custom_json.json"
+      ],
+      "patient_id": "laine-aava",
+      "patient_dob": "1975-09-21"
+    },
+    {
+      "patient_name": "Aava Laine",
+      "date": "2022-03-01",
+      "date_precision": "month",
+      "category": "diagnosis",
+      "label": "Hypertension",
+      "standard_code": "38341003",
+      "standard_code_system": "SNOMED",
+      "evidence_files": [
+        "llm_free_text_discharge_aava.txt",
+        "llm_messy_legacy_csv.csv"
+      ],
+      "patient_id": "laine-aava",
+      "patient_dob": "1975-09-21"
+    },
+    {
+      "patient_name": "Aava Laine",
+      "date": "2024-06-10",
+      "date_precision": "day",
+      "category": "lab",
+      "label": "HbA1c",
+      "standard_code": "4548-4",
+      "standard_code_system": "LOINC",
+      "value": 5.7,
+      "unit": "%",
+      "evidence_files": [
+        "llm_free_text_discharge_aava.txt",
+        "llm_weird_custom_json.json"
+      ],
+      "patient_id": "laine-aava",
+      "patient_dob": "1975-09-21"
+    },
+    {
+      "patient_name": "Aava Laine",
+      "date": "2024-06-10",
+      "date_precision": "day",
+      "category": "lab",
+      "label": "LDL Cholesterol",
+      "standard_code": "2089-1",
+      "standard_code_system": "LOINC",
+      "value": 3.4,
+      "unit": "mmol/L",
+      "flag": "H",
+      "evidence_files": [
+        "llm_free_text_discharge_aava.txt",
+        "llm_weird_custom_json.json"
+      ],
+      "patient_id": "laine-aava",
+      "patient_dob": "1975-09-21"
+    },
+    {
+      "patient_name": "Aava Laine",
+      "date": "2024-06-12",
+      "date_precision": "day",
+      "category": "imaging",
+      "label": "Chest X-Ray",
+      "summary": "Chest X-Ray showed no pneumonia",
+      "evidence_files": [
+        "llm_free_text_discharge_aava.txt"
+      ],
+      "patient_id": "laine-aava",
+      "patient_dob": "1975-09-21"
+    },
+    {
+      "patient_name": "Aava Laine",
+      "date": "2024-06-12",
+      "date_precision": "day",
+      "category": "vitals",
+      "label": "Blood Pressure",
+      "value": "146/88",
+      "unit": "mmHg",
+      "evidence_files": [
+        "llm_free_text_discharge_aava.txt"
+      ],
+      "patient_id": "laine-aava",
+      "patient_dob": "1975-09-21"
+    },
+    {
+      "patient_name": "Aava Laine",
+      "date": "2024-06-13",
+      "date_precision": "day",
+      "category": "medication",
+      "label": "Amlodipine",
+      "value": 5,
+      "unit": "mg",
+      "evidence_files": [
+        "llm_free_text_discharge_aava.txt",
+        "llm_weird_custom_json.json",
+        "llm_messy_legacy_csv.csv"
+      ],
+      "patient_id": "laine-aava",
+      "patient_dob": "1975-09-21"
+    },
+    {
+      "patient_name": "Otto Nieminen",
+      "date": "2016-11-07",
+      "date_precision": "day",
+      "category": "diagnosis",
+      "label": "Type 2 Diabetes Mellitus",
+      "standard_code": "44054006",
+      "standard_code_system": "SNOMED",
+      "evidence_files": [
+        "llm_mixed_patient_notes.txt"
+      ],
+      "patient_id": "nieminen-otto",
+      "patient_dob": "1962-02-03"
+    },
+    {
+      "patient_name": "Otto Nieminen",
+      "date": "2016-01-01",
+      "date_precision": "year",
+      "category": "diagnosis",
+      "label": "Hypertension",
+      "standard_code": "38341003",
+      "standard_code_system": "SNOMED",
+      "evidence_files": [
+        "llm_mixed_patient_notes.txt"
+      ],
+      "patient_id": "nieminen-otto",
+      "patient_dob": "1962-02-03"
+    },
+    {
+      "patient_name": "Otto Nieminen",
+      "date": "2016-11-01",
+      "date_precision": "month",
+      "category": "medication",
+      "label": "Metformin",
+      "value": 500,
+      "unit": "mg",
+      "evidence_files": [
+        "llm_mixed_patient_notes.txt"
+      ],
+      "patient_id": "nieminen-otto",
+      "patient_dob": "1962-02-03"
+    },
+    {
+      "patient_name": "Otto Nieminen",
+      "date": "2024-06-10",
+      "date_precision": "day",
+      "category": "lab",
+      "label": "HbA1c",
+      "standard_code": "4548-4",
+      "standard_code_system": "LOINC",
+      "value": 8.4,
+      "unit": "%",
+      "flag": "H",
+      "evidence_files": [
+        "llm_mixed_patient_notes.txt",
+        "llm_weird_custom_json.json",
+        "llm_messy_legacy_csv.csv"
+      ],
+      "patient_id": "nieminen-otto",
+      "patient_dob": "1962-02-03"
+    },
+    {
+      "patient_name": "Otto Nieminen",
+      "date": "2024-06-10",
+      "date_precision": "day",
+      "category": "lab",
+      "label": "eGFR",
+      "standard_code": "33914-3",
+      "standard_code_system": "LOINC",
+      "value": 64,
+      "unit": "mL/min/1.73m2",
+      "evidence_files": [
+        "llm_mixed_patient_notes.txt"
+      ],
+      "patient_id": "nieminen-otto",
+      "patient_dob": "1962-02-03"
+    },
+    {
+      "patient_name": "Leena Saarinen",
+      "date": "2020-04-02",
+      "date_precision": "day",
+      "category": "allergy",
+      "label": "Peanut allergy",
+      "standard_code": "91936005",
+      "standard_code_system": "SNOMED",
+      "flag": "HIGH",
+      "evidence_files": [
+        "llm_mixed_patient_notes.txt",
+        "llm_messy_legacy_csv.csv"
+      ],
+      "patient_id": "saarinen-leena",
+      "patient_dob": "1988-12-11"
+    },
+    {
+      "patient_name": "Leena Saarinen",
+      "date": "2021-09-01",
+      "date_precision": "month",
+      "category": "diagnosis",
+      "label": "Migraine",
+      "standard_code": "37796009",
+      "standard_code_system": "SNOMED",
+      "evidence_files": [
+        "llm_mixed_patient_notes.txt"
+      ],
+      "patient_id": "saarinen-leena",
+      "patient_dob": "1988-12-11"
+    },
+    {
+      "patient_name": "Leena Saarinen",
+      "date": "2024-05-02",
+      "date_precision": "day",
+      "category": "vitals",
+      "label": "Blood Pressure",
+      "value": "118/76",
+      "unit": "mmHg",
+      "evidence_files": [
+        "llm_mixed_patient_notes.txt"
+      ],
+      "patient_id": "saarinen-leena",
+      "patient_dob": "1988-12-11"
+    }
+  ],
+  "expected_negatives": [
+    {
+      "patient_name": "Aava Laine",
+      "statement": "She denies diabetes.",
+      "should_not_extract": "Type 2 Diabetes Mellitus"
+    },
+    {
+      "patient_name": "Leena Saarinen",
+      "statement": "No diabetes, no hypertension.",
+      "should_not_extract": [
+        "Type 2 Diabetes Mellitus",
+        "Hypertension"
+      ]
+    },
+    {
+      "patient_name": "Aava Laine",
+      "statement": "No known drug allergies.",
+      "should_not_extract": "Allergy"
+    }
+  ]
+}

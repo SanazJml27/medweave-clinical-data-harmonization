@@ -1,0 +1,5 @@
+who_is_this,born,approx_when,thing_seen,kind_of_thing,extra_context,number,units-ish,source_note_id
+Aava Laine,1975-09-21,early March 2022,HTN / high blood pressure,problem,clinic note says BP repeatedly elevated,,,MCSV-001
+Aava Laine,1975-09-21,13/06/2024,Amlodipine 5mg daily,new medication,started at discharge,5,mg,MCSV-002
+Otto Nieminen,1962-02-03,10-Jun-2024,A1c,blood test,flagged high,8.4,%,MCSV-003
+Leena Saarinen,1988-12-11,02/04/2020,"peanut allergy, anaphylaxis risk",allergy,avoid peanuts,,,MCSV-004

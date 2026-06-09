@@ -1,0 +1,54 @@
+{
+  "system": "Legacy NotesWare X",
+  "created": "2025-02-05",
+  "records": [
+    {
+      "person": {
+        "fullName": "Aava Laine",
+        "birth": "1975/09/21",
+        "legacyNo": "NW-AAVA-1"
+      },
+      "items": [
+        {
+          "kind": "dx-ish",
+          "when_text": "May 2019",
+          "clinical_phrase": "bronchial asthma, uses rescue inhaler",
+          "terminology_hint": "ICD J45.9 maybe"
+        },
+        {
+          "kind": "medicine-ish",
+          "when_text": "2024-06-13",
+          "clinical_phrase": "amlodipine five milligrams daily started at discharge",
+          "terminology_hint": ""
+        },
+        {
+          "kind": "lab-ish",
+          "when_text": "10 June 2024",
+          "clinical_phrase": "glycoHb 5.7 percent; LDL-C 3.4 mmol/L high",
+          "terminology_hint": "LOINC if known"
+        }
+      ]
+    },
+    {
+      "person": {
+        "fullName": "Otto Nieminen",
+        "birth": "1962/02/03",
+        "legacyNo": "NW-OTTO-2"
+      },
+      "items": [
+        {
+          "kind": "dx-ish",
+          "when_text": "2016",
+          "clinical_phrase": "diabetes type two, no complications mentioned",
+          "terminology_hint": "maps to E11.9 / SNOMED 44054006"
+        },
+        {
+          "kind": "lab-ish",
+          "when_text": "2024-06-10",
+          "clinical_phrase": "Hb A one c = 8.4 %, high",
+          "terminology_hint": ""
+        }
+      ]
+    }
+  ]
+}

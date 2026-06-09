@@ -1,0 +1,170 @@
+{
+  "export_meta": {
+    "source_system": "Clinic B - Medisoft",
+    "export_date": "2024-11-18",
+    "patient_local_id": "CB-2021-00934",
+    "version": "2.1"
+  },
+  "patient": {
+    "first_name": "Mikael",
+    "last_name": "Virtanen",
+    "dob": "12/04/1968",
+    "sex": "M",
+    "ssn_partial": "****-****-68",
+    "phone": "+358-40-5551234",
+    "city": "Helsinki"
+  },
+  "problems": [
+    {
+      "problem_id": "P001",
+      "description": "HTN",
+      "snomed_code": "38341003",
+      "status": "Chronic/Active",
+      "first_noted": "2018",
+      "last_reviewed": "2024-10-01",
+      "severity": "Moderate",
+      "notes": "Patient non-compliant with low-salt diet. BP poorly controlled."
+    },
+    {
+      "problem_id": "P002",
+      "description": "DM Type II",
+      "snomed_code": "44054006",
+      "status": "Chronic/Active",
+      "first_noted": "2020-02",
+      "last_reviewed": "2024-10-01",
+      "severity": "Mild",
+      "notes": "HbA1c trending upward. Dietary counseling recommended."
+    },
+    {
+      "problem_id": "P003",
+      "description": "Dyslipidemia",
+      "snomed_code": "370992007",
+      "status": "Chronic/Active",
+      "first_noted": "2020",
+      "last_reviewed": "2024-10-01",
+      "severity": "Mild",
+      "notes": "On statin therapy. LDL within target."
+    },
+    {
+      "problem_id": "P004",
+      "description": "Obesity",
+      "snomed_code": "414916001",
+      "status": "Chronic/Active",
+      "first_noted": "2021-06",
+      "last_reviewed": "2024-10-01",
+      "severity": "Moderate",
+      "notes": "BMI 31.2. Referred to nutritionist."
+    }
+  ],
+  "medications": [
+    {
+      "med_id": "M001",
+      "name": "Lisinopril",
+      "dose": "10",
+      "dose_unit": "mg",
+      "route": "PO",
+      "frequency": "QD",
+      "start_date": "2018-06-15",
+      "prescriber": "Dr. Korhonen",
+      "active": true,
+      "notes": "Consider dose increase if BP not controlled at next visit"
+    },
+    {
+      "med_id": "M002",
+      "name": "Metformin HCl",
+      "dose": "500",
+      "dose_unit": "mg",
+      "route": "PO",
+      "frequency": "BID",
+      "start_date": "2020-02-20",
+      "prescriber": "Dr. Korhonen",
+      "active": true,
+      "notes": "Take with meals to reduce GI side effects"
+    },
+    {
+      "med_id": "M003",
+      "name": "Atorvastatin",
+      "dose": "20",
+      "dose_unit": "mg",
+      "route": "PO",
+      "frequency": "QHS",
+      "start_date": "2020-03-05",
+      "prescriber": "Dr. Korhonen",
+      "active": true,
+      "notes": "Check LFTs annually"
+    }
+  ],
+  "lab_results": [
+    {
+      "test": "HbA1c",
+      "result": "7.8",
+      "unit": "%",
+      "ref_range": "< 7.0",
+      "flag": "H",
+      "collected": "2024-01-10",
+      "resulted": "2024-01-11"
+    },
+    {
+      "test": "LDL Cholesterol",
+      "result": "2.4",
+      "unit": "mmol/L",
+      "ref_range": "< 2.6",
+      "flag": "N",
+      "collected": "2024-01-10",
+      "resulted": "2024-01-11"
+    },
+    {
+      "test": "eGFR",
+      "result": "74",
+      "unit": "mL/min/1.73m2",
+      "ref_range": "> 60",
+      "flag": "N",
+      "collected": "2024-01-10",
+      "resulted": "2024-01-11"
+    },
+    {
+      "test": "HbA1c",
+      "result": "8.2",
+      "unit": "%",
+      "ref_range": "< 7.0",
+      "flag": "H",
+      "collected": "2023-07-15",
+      "resulted": "2023-07-16"
+    }
+  ],
+  "visits": [
+    {
+      "visit_id": "V001",
+      "date": "2024-10-01",
+      "type": "Follow-up",
+      "provider": "Dr. Korhonen",
+      "chief_complaint": "Routine diabetes and hypertension follow-up",
+      "bp_systolic": 145,
+      "bp_diastolic": 90,
+      "weight_kg": 94.5,
+      "height_cm": 174
+    },
+    {
+      "visit_id": "V002",
+      "date": "2024-04-15",
+      "type": "Follow-up",
+      "provider": "Dr. Korhonen",
+      "chief_complaint": "Medication review",
+      "bp_systolic": 150,
+      "bp_diastolic": 94,
+      "weight_kg": 95.0,
+      "height_cm": 174
+    },
+    {
+      "visit_id": "V003",
+      "date": "2023-07-15",
+      "type": "Follow-up",
+      "provider": "Dr. Korhonen",
+      "chief_complaint": "Annual review",
+      "bp_systolic": 152,
+      "bp_diastolic": 96,
+      "weight_kg": 96.2,
+      "height_cm": 174
+    }
+  ]
+}
