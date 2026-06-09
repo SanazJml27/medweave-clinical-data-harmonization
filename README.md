@@ -37,7 +37,7 @@ MedWeave turns these heterogeneous sources into a single explainable timeline wh
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/medweave-clinical-data-harmonization.git
+git clone https://github.com/SanazJml27/medweave-clinical-data-harmonization.git
 cd medweave-clinical-data-harmonization
 
 python -m venv .venv
@@ -102,7 +102,7 @@ The repository includes synthetic sample data for testing:
 * multi-patient synthetic examples
 * LLM stress-test examples with messy text, JSON, and CSV
 
-All sample data are fictional.
+All sample data are synthetic.
 
 
 ## Testing
