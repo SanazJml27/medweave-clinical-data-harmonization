@@ -8,7 +8,6 @@ It supports structured and messy healthcare data, including FHIR bundles, custom
 ![MedWeave Timeline](docs/assets/medweave-timeline.png)
 ![MedWeave LLM Extraction](docs/assets/medweave-llm-extraction.png)
 
-Add screenshots manually after running the app locally.
 
 ## Features
 
@@ -34,25 +33,6 @@ Clinical data often arrives in incompatible formats:
 
 MedWeave turns these heterogeneous sources into a single explainable timeline while keeping source evidence visible.
 
-## Architecture
-
-```text
-Uploaded files
-   ↓
-Format detection
-   ↓
-FHIR / JSON / CSV / TXT parsers
-   ↓
-RawEvent model
-   ↓
-Rule-based harmonizer
-   ↓
-Optional LLM extraction for messy files
-   ↓
-HarmonizedEvent model
-   ↓
-Timeline + provenance + exports
-```
 
 ## Installation
 
@@ -124,20 +104,6 @@ The repository includes synthetic sample data for testing:
 
 All sample data are fictional.
 
-## Showing the UI on GitHub
-
-Add screenshots manually after running the app locally.
-
-Use these paths:
-
-```text
-docs/assets/medweave-home.png
-docs/assets/medweave-timeline.png
-docs/assets/medweave-llm-extraction.png
-```
-
-Do not generate screenshots automatically.
-Do not resize or edit screenshots.
 
 ## Testing
 
