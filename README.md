@@ -4,8 +4,6 @@
 
 It supports structured and messy healthcare data, including FHIR bundles, custom JSON exports, flat CSV files, and free-text clinical notes. The app combines deterministic parsing with optional LLM-assisted extraction for ambiguous or free-text records.
 
-![MedWeave Home](docs/assets/medweave-home.png)
-![MedWeave Timeline](docs/assets/medweave-timeline.png)
 ![MedWeave LLM Extraction](docs/assets/medweave-llm-extraction.png)
 
 
